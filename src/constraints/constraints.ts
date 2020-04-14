@@ -1,7 +1,7 @@
 /*
 * Przeprogramowani.ts - https://przeprogramowani.pl/typescript/
 *
-* 
+* Constraints
 * ------------------
 *
 * Goal: Implementation of generic function `processItems` is broken. Generic type `T` is not enough so let's fix it!
