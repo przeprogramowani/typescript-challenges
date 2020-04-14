@@ -4,6 +4,10 @@
 
 ## A set of challenges helping you understand basics of TypeScript 🚀
 
+**Setup & Installation**
+
+Clone this repository and run `npm install`. You're good to go!
+
 **How to**
 
 * Each directory in `src` represents a challenge related to a specific feature of TypeScript.
