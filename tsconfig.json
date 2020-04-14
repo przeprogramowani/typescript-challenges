@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "outDir": "__tests__",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+}

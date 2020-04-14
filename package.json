@@ -4,7 +4,7 @@
   "description": "A set of challenges helping you understand basics of TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test:this-or-that": "tsc src/this-or-that/this-or-that.ts --out src/this-or-that/this-or-that.test.js && jest src/this-or-that"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/psmyrdek/typescript-challenges/issues"
   },
-  "homepage": "https://github.com/psmyrdek/typescript-challenges#readme"
+  "homepage": "https://github.com/psmyrdek/typescript-challenges#readme",
+  "dependencies": {
+    "typescript": "3.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "25.2.1",
+    "@types/node": "12.12.35",
+    "jest": "25.3.0"
+  }
 }
