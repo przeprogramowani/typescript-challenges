@@ -1,7 +1,7 @@
 /*
 * Przeprogramowani.ts - https://przeprogramowani.pl/typescript/
 *
-* 
+* Media
 * ------------------
 *
 * Goal: At Przeprogramowani.pl we use multiple platforms at once - make sure that our favorite one works!
