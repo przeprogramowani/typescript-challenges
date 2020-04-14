@@ -18,3 +18,4 @@ Clone this repository and run `npm install`. You're good to go!
 
 * `npm run test:this-or-that`
 * `npm run test:only-one`
+* `npm run test:new-skills`
