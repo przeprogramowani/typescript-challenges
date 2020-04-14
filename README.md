@@ -20,6 +20,7 @@ Clone this repository and run `npm install`. You're good to go!
 * `npm run test:only-one`
 * `npm run test:new-skills`
 * `npm run test:shortcuts`
+* `npm run test:constraints`
 
 **Help me, I'm stuck!**
 

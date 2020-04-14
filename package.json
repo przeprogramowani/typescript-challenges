@@ -7,6 +7,7 @@
     "test:this-or-that": "tsc src/this-or-that/this-or-that.ts --out src/this-or-that/this-or-that.test.js && jest src/this-or-that",
     "test:only-one": "tsc src/only-one/only-one.ts --out src/only-one/only-one.test.js && jest src/only-one",
     "test:new-skills": "tsc src/new-skills/new-skills.ts --out src/new-skills/new-skills.test.js && jest src/new-skills",
+    "test:constraints": "tsc src/constraints/constraints.ts --out src/constraints/constraints.test.js && jest src/constraints",
     "test:shortcuts": "tsc src/shortcuts/shortcuts.ts --out src/shortcuts/shortcuts.test.js && jest src/shortcuts"
   },
   "repository": {
