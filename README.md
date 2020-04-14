@@ -19,3 +19,7 @@ Clone this repository and run `npm install`. You're good to go!
 * `npm run test:this-or-that`
 * `npm run test:only-one`
 * `npm run test:new-skills`
+
+**Help me, I'm stuck!**
+
+Find all the answers in [TypeScript Documentation](https://www.typescriptlang.org/docs/home.html)
