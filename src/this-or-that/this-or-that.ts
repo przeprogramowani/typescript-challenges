@@ -16,6 +16,8 @@ function configureScreenSize(width: string, height: string) {
     return `Setting screen size as ${width}px x ${height}px`;
 }
 
+/* Do not modify tests */
+
 test('should pass with two numbers', () => {
     expect(configureScreenSize(iAmANumber, iAmANumber)).toBe('Setting screen size as 800px x 800px')
 })

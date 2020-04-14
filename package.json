@@ -4,7 +4,8 @@
   "description": "A set of challenges helping you understand basics of TypeScript",
   "main": "index.js",
   "scripts": {
-    "test:this-or-that": "tsc src/this-or-that/this-or-that.ts --out src/this-or-that/this-or-that.test.js && jest src/this-or-that"
+    "test:this-or-that": "tsc src/this-or-that/this-or-that.ts --out src/this-or-that/this-or-that.test.js && jest src/this-or-that",
+    "test:only-one": "tsc src/only-one/only-one.ts --out src/only-one/only-one.test.js && jest src/only-one"
   },
   "repository": {
     "type": "git",
