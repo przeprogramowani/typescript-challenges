@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:warm-up": "tsc src/warm-up/warm-up.ts --out src/warm-up/warm-up.test.js && jest src/warm-up",
+    "test:media": "tsc src/media/media.ts --out src/media/media.test.js && jest src/media",
     "test:shortcuts": "tsc src/shortcuts/shortcuts.ts --out src/shortcuts/shortcuts.test.js && jest src/shortcuts",
     "test:this-or-that": "tsc src/this-or-that/this-or-that.ts --out src/this-or-that/this-or-that.test.js && jest src/this-or-that",
     "test:only-one": "tsc src/only-one/only-one.ts --out src/only-one/only-one.test.js && jest src/only-one",

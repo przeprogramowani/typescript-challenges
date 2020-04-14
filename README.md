@@ -17,6 +17,7 @@ Clone this repository and run `npm install`. You're good to go!
 **Test commands for challenges**
 
 * `npm run test:warm-up`
+* `npm run test:media`
 * `npm run test:shortcuts`
 * `npm run test:this-or-that`
 * `npm run test:only-one`
