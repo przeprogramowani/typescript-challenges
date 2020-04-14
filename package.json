@@ -1,0 +1,24 @@
+{
+  "name": "typescript-challenges",
+  "version": "0.0.1",
+  "description": "A set of challenges helping you understand basics of TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psmyrdek/typescript-challenges.git"
+  },
+  "keywords": [
+    "typescript",
+    "knowledge sharing",
+    "github"
+  ],
+  "author": "psmyrdek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psmyrdek/typescript-challenges/issues"
+  },
+  "homepage": "https://github.com/psmyrdek/typescript-challenges#readme"
+}
