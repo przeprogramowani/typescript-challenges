@@ -8,13 +8,14 @@
 * 
 * Hint: https://www.typescriptlang.org/docs/handbook/basic-types.html
 */
+
 const age: number= 80;
 const firstName: string= 'Przemek';
-const todos= new Map<number, {todo:string, priority?:number}>([
-    [0,{ todo: 'Learn TypeScript' }],
-    [1,{ todo: 'Subscribe Przeprogramowani', priority: 1}],
-    [2,{ todo: 'Sign up for newsletter', priority: 1}]
-] )
+const todos: Array<{todo:string, priority?:number}>= [
+    { todo: 'Learn TypeScript' },
+    { todo: 'Subscribe Przeprogramowani', priority: 1},
+    { todo: 'Sign up for newsletter', priority: 1}
+]
 
 /* Do not modify tests */
 
@@ -27,6 +28,5 @@ test('should verify firstName', () => {
 })
 
 test('should verify todos', () => {
-    expect(todos.size).toBe(3);
-
+    expect(todos.length).toBe(3);
 })
