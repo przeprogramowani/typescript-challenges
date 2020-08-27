@@ -9,23 +9,27 @@
 * Hint: https://www.typescriptlang.org/docs/handbook/classes.html
 */
 
-class Bag {
+abstract class Bag {
+    items: string[];
     constructor(
         items: string[]
-    ) { }
+    ) { this.items = items }
 
-    lookInside() {
-        return this.items;
-    }
+    lookInside() { return this.items };
 }
 
 class BrandedBag extends Bag {
+    logo: string;
+    brand: string
     constructor(
         logo: string,
         brand: string,
         items: string[]
     ) {
         super(items);
+        this.logo = logo;
+        this.brand = brand;
+        this.items = items;
     }
 
     checkBrand() {
