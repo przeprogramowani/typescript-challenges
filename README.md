@@ -4,6 +4,8 @@
 
 ## A set of challenges helping you understand basics of TypeScript 🚀
 
+🇵🇱 See all episodes in our course - [Przeprogramowani.ts](http://przeprogramowani.pl/typescript)
+
 **Setup & Installation**
 
 Clone this repository and run `npm install`. You're good to go!
