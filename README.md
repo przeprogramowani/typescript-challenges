@@ -4,7 +4,7 @@
 
 ## A set of challenges helping you understand basics of TypeScript 🚀
 
-🇵🇱 See all episodes in our course - [Przeprogramowani.ts](http://przeprogramowani.pl/typescript)
+🇵🇱 See all episodes in our course - [Przeprogramowani.ts](https://przeprogramowani.netlify.app/typescript/)
 
 **Setup & Installation**
 
