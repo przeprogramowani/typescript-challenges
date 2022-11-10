@@ -10,12 +10,12 @@
 */
 
 enum Media {
-    Internet,
-    Press,
-    Radio
+    Internet = "Internet",
+    Press = "Press",
+    Radio = "Radio"
 }
 
-const przeprogramowani: Media = Media.Press;
+const przeprogramowani: Media = Media.Internet;
 
 /* Do not modify tests */
 
