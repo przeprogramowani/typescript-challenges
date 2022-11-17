@@ -27,8 +27,8 @@ const snake = new Snake()
 type AnimalInZoo = Monkey | Snake
 
 function eatSomething(animal: AnimalInZoo) {
-    animal.eatBanana();
-    animal.eatMouse();
+    if (animal instanceof Monkey) return animal.eatBanana();
+    if (animal instanceof Snake) return animal.eatMouse();
 }
 
 /* Do not modify tests */
