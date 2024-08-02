@@ -1,4 +1,4 @@
-# typescript-challenges
+# Opanuj TypeScript z Przeprogramowanymi
 
 ![](./media/logo-main.jpg)
 
