@@ -8,18 +8,10 @@
  *
  * Hint: https://www.typescriptlang.org/docs/handbook/enums.html
  */
-import {test, expect} from "vitest";
-
 enum Media {
   Internet,
   Press,
   Radio,
 }
 
-const przeprogramowani: Media = Media.Press;
-
-/* Do not modify tests */
-
-test("should use proper media type", () => {
-  expect(przeprogramowani).toBe("Internet");
-});
+export const przeprogramowani: Media = Media.Radio;

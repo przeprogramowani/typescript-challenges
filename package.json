@@ -1,10 +1,8 @@
 {
-  "name": "typescript-challenges",
+  "name": "@przeprogramowani/typescript-challenges",
   "version": "1.0.0",
   "description": "A set of challenges helping you understand basics of TypeScript",
-  "main": "index.js",
   "scripts": {
-    "test:all": "tsc && vitest dist",
     "test:warm-up": "tsc src/warm-up/warm-up.ts && vitest src/warm-up",
     "test:media": "tsc src/media/media.ts && vitest src/media",
     "test:shortcuts": "tsc src/shortcuts/shortcuts.ts && vitest src/shortcuts",
@@ -17,19 +15,14 @@
     "type": "git",
     "url": "git+https://github.com/psmyrdek/typescript-challenges.git"
   },
-  "keywords": [
-    "typescript",
-    "knowledge sharing",
-    "github"
-  ],
-  "author": "psmyrdek",
+  "author": "przeprogramowani",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/psmyrdek/typescript-challenges/issues"
   },
   "homepage": "https://github.com/psmyrdek/typescript-challenges#readme",
   "devDependencies": {
-    "@types/node": "22.0.3",
+    "@types/node": "20.14.14",
     "typescript": "5.5.4",
     "vitest": "2.0.5"
   }

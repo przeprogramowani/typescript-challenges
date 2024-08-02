@@ -8,36 +8,26 @@
  *
  * Hint: https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types
  */
-import {test, expect} from "vitest";
 
 class Monkey {
   eatBanana() {
-    return "Eating banana!";
+    return 'Eating banana!';
   }
 }
 
 class Snake {
   eatMouse() {
-    return "Eating mouse!";
+    return 'Eating mouse!';
   }
 }
 
-const monkey = new Monkey();
-const snake = new Snake();
+export const monkey = new Monkey();
+export const snake = new Snake();
 
 type AnimalInZoo = Monkey | Snake;
 
-function eatSomething(animal: AnimalInZoo) {
+export function eatSomething(animal: AnimalInZoo) {
   animal.eatBanana();
   animal.eatMouse();
 }
-
 /* Do not modify tests */
-
-test("should eat banana", () => {
-  expect(eatSomething(monkey)).toBe("Eating banana!");
-});
-
-test("should eat mouse", () => {
-  expect(eatSomething(snake)).toBe("Eating mouse!");
-});

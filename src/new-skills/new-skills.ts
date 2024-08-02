@@ -8,7 +8,6 @@
  *
  * Hint: https://www.typescriptlang.org/docs/handbook/advanced-types.html#intersection-types
  */
-import {test, expect} from "vitest";
 
 interface Singer {
   sing(): string;
@@ -23,17 +22,9 @@ interface Teacher {
 }
 
 type SkilledPerson = Singer;
+export const johnDoe: SkilledPerson = {};
 
-const johnDoe: SkilledPerson = {};
-
-function buildResume(person: SkilledPerson) {
+export function buildResume(person: SkilledPerson) {
   const skills = [person.dance(), person.sing(), person.teach()];
   return skills;
 }
-
-/* Do not modify tests */
-
-test("should build an impressive resume", () => {
-  const resume = buildResume(johnDoe);
-  expect(resume).toStrictEqual(["I can dance!", "I can sing!", "I can teach!"]);
-});

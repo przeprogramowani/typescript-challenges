@@ -8,37 +8,24 @@
  *
  * Hint: https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types
  */
-import {test, expect} from "vitest";
 
 const iAmANumber = 800;
-const iAmAString = "600";
+const iAmAString = '600';
 
-function configureScreenSize(width: string, height: string) {
+function configureScreenSize(width, height) {
   return `Setting screen size as ${width}px x ${height}px`;
 }
 
-/* Do not modify tests */
+export function verify() {
+  const result1 = configureScreenSize(1920, '1080');
+  const result2 = configureScreenSize('1920', '1080');
+  const result3 = configureScreenSize(1920, 1080);
+  const result4 = configureScreenSize('1920', 1080);
 
-test("should pass with two numbers", () => {
-  expect(configureScreenSize(iAmANumber, iAmANumber)).toBe(
-    "Setting screen size as 800px x 800px"
-  );
-});
-
-test("should pass with number and string", () => {
-  expect(configureScreenSize(iAmANumber, iAmAString)).toBe(
-    "Setting screen size as 800px x 600px"
-  );
-});
-
-test("should pass with string and number", () => {
-  expect(configureScreenSize(iAmAString, iAmANumber)).toBe(
-    "Setting screen size as 600px x 800px"
-  );
-});
-
-test("should pass with two strings", () => {
-  expect(configureScreenSize(iAmAString, iAmAString)).toBe(
-    "Setting screen size as 600px x 600px"
-  );
-});
+  return {
+    result1,
+    result2,
+    result3,
+    result4,
+  };
+}

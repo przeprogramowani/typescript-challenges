@@ -1,11 +1,8 @@
 {
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "strict": true,
-    "noEmitOnError": true,
-    "noImplicitAny": true,
-    "outDir": "./dist",
-    "rootDir": "./src"
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+    "noImplicitAny": true
+  }
 }

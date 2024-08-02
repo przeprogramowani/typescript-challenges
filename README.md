@@ -14,6 +14,8 @@ Clone this repository and run `npm install`. You're good to go!
 - In each challenge your solution have to pass two kinds of tests - **TypeScript compilation** and **unit tests**
 - Challenge of name `XYZ` can be verified by running `npm run test:XYZ`, for example: `npm run test:warm-up`
 
+> **Note:** Do pass the challenge, make sure you only modify TypeScript files. Tests should remain unchanged.
+
 **Test commands for challenges**
 
 - `npm run test:warm-up`
