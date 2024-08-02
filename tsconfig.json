@@ -1,8 +1,9 @@
 {
-    "compilerOptions": {
-        "outDir": "__tests__",
-        "typeRoots": [
-            "node_modules/@types"
-        ]
-    },
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

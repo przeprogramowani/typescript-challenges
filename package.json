@@ -1,16 +1,17 @@
 {
   "name": "typescript-challenges",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A set of challenges helping you understand basics of TypeScript",
   "main": "index.js",
   "scripts": {
-    "test:warm-up": "tsc src/warm-up/warm-up.ts --out src/warm-up/warm-up.test.js && jest src/warm-up",
-    "test:media": "tsc src/media/media.ts --out src/media/media.test.js && jest src/media",
-    "test:shortcuts": "tsc src/shortcuts/shortcuts.ts --out src/shortcuts/shortcuts.test.js && jest src/shortcuts",
-    "test:this-or-that": "tsc src/this-or-that/this-or-that.ts --out src/this-or-that/this-or-that.test.js && jest src/this-or-that",
-    "test:only-one": "tsc src/only-one/only-one.ts --out src/only-one/only-one.test.js && jest src/only-one",
-    "test:new-skills": "tsc src/new-skills/new-skills.ts --out src/new-skills/new-skills.test.js && jest src/new-skills",
-    "test:constraints": "tsc src/constraints/constraints.ts --out src/constraints/constraints.test.js && jest src/constraints"
+    "test:all": "tsc && vitest dist",
+    "test:warm-up": "tsc src/warm-up/warm-up.ts && vitest src/warm-up",
+    "test:media": "tsc src/media/media.ts && vitest src/media",
+    "test:shortcuts": "tsc src/shortcuts/shortcuts.ts && vitest src/shortcuts",
+    "test:this-or-that": "tsc src/this-or-that/this-or-that.ts && vitest src/this-or-that",
+    "test:only-one": "tsc src/only-one/only-one.ts && vitest src/only-one",
+    "test:new-skills": "tsc src/new-skills/new-skills.ts && vitest src/new-skills",
+    "test:constraints": "tsc src/constraints/constraints.ts && vitest src/constraints"
   },
   "repository": {
     "type": "git",
@@ -27,12 +28,9 @@
     "url": "https://github.com/psmyrdek/typescript-challenges/issues"
   },
   "homepage": "https://github.com/psmyrdek/typescript-challenges#readme",
-  "dependencies": {
-    "typescript": "3.8.3"
-  },
   "devDependencies": {
-    "@types/jest": "25.2.1",
-    "@types/node": "12.12.35",
-    "jest": "25.3.0"
+    "@types/node": "22.0.3",
+    "typescript": "5.5.4",
+    "vitest": "2.0.5"
   }
 }
