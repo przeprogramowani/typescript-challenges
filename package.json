@@ -33,6 +33,6 @@
   "devDependencies": {
     "@types/jest": "25.2.1",
     "@types/node": "12.12.35",
-    "jest": "25.3.0"
+    "jest": "29.7.0"
   }
 }
