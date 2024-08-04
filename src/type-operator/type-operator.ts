@@ -4,7 +4,7 @@
  * Utility Types
  * ------------------
  *
- * Goal: Now we can add wrong value types as parameter to the function. Let's fix it by using on of the type operators.
+ * Goal: Now we can add wrong value types as parameter to the function. Let's fix it by using one of the type operators.
  *
  * Hint: https://www.typescriptlang.org/docs/handbook/2/keyof-types.html
  */
