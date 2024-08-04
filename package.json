@@ -9,7 +9,8 @@
     "test:this-or-that": "tsc src/this-or-that/this-or-that.ts && vitest src/this-or-that",
     "test:only-one": "tsc src/only-one/only-one.ts && vitest src/only-one",
     "test:new-skills": "tsc src/new-skills/new-skills.ts && vitest src/new-skills",
-    "test:constraints": "tsc src/constraints/constraints.ts && vitest src/constraints"
+    "test:constraints": "tsc src/constraints/constraints.ts && vitest src/constraints",
+    "test:type-operator": "tsc src/type-operator/type-operator.ts && vitest src/type-operator"
   },
   "repository": {
     "type": "git",
