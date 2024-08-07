@@ -4,7 +4,7 @@
  * Utility Types
  * ------------------
  *
- * Goal: Now we can add wrong value types as parameter to the function. Let's fix it by using one of the type operators.
+ * Goal: The third parameter of "filterByProperty" func has unknown type. Replace it with strict check of the type, based on prop name.
  *
  * Hint: https://www.typescriptlang.org/docs/handbook/2/keyof-types.html
  */
@@ -27,14 +27,14 @@ const books: Book[] = [
   {
     id: 2,
     name: 'When: The Scientific Secrets of Perfect Timing',
-    author: 'Daniel H. Pink'
+    author: 'Daniel H. Pink',
   },
   {
     id: 3,
     name: 'Total Recall: My Unbelievably True Life Story',
-    author: 'John Doe'
+    author: 'John Doe',
   },
-  { id: 4, name: 'Wyloguj swój mózg', author: 'Anders Hansen' }
+  { id: 4, name: 'Wyloguj swój mózg', author: 'Anders Hansen' },
 ];
 
 const videos: Video[] = [
@@ -42,17 +42,19 @@ const videos: Video[] = [
   { id: 2, name: 'Refaktoryzacja JS do TS', length: 15 },
   { id: 3, name: 'TypeScript na Backendzie', length: 13 },
   { id: 4, name: 'TypeScript i Frameworki Front-Endowe', length: 19 },
-  { id: 5, name: 'Poznaj TypeScript', length: 15 }
+  { id: 5, name: 'Poznaj TypeScript', length: 15 },
 ];
 
 function filterByProperty<T extends IdentifiableItem, K extends keyof T>(
   items: T[],
   key: K,
-  value: T[any]
+  value: unknown
 ): T[] {
-  return items.filter(item => item[key] === value);
+  return items.filter((item) => item[key] === value);
 }
 
-export const filteredBooksByAuthor = filterByProperty(books, 'author', {author:'Philip K. Dick'});
+export const filteredBooksByAuthor = filterByProperty(books, 'author', {
+  author: 'Philip K. Dick',
+});
 
 export const filteredVideosByLength = filterByProperty(videos, 'length', '15');
