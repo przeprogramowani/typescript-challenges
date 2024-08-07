@@ -10,6 +10,7 @@
     "test:only-one": "tsc src/only-one/only-one.ts && vitest src/only-one",
     "test:new-skills": "tsc src/new-skills/new-skills.ts && vitest src/new-skills",
     "test:constraints": "tsc src/constraints/constraints.ts && vitest src/constraints",
+    "test:type-operator": "tsc src/type-operator/type-operator.ts && vitest src/type-operator",
     "test:subscriber": "tsc src/subscriber/subscriber.ts && vitest src/subscriber"
   },
   "repository": {
