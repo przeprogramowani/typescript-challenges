@@ -1,4 +1,4 @@
-import {LogEntry, SimpleLogFilterCriteria, SortCriteria} from "../types";
+import {FilterCriteria, SortCriteria} from "../types";
 
 export function advancedSort<ItemType>(
   arr: ItemType[],
@@ -23,20 +23,23 @@ export function advancedSort<ItemType>(
 
 export const NO_FILTER = null;
 
-export function simpleLogFilter(
-  logs: any[],
-  criteria: SimpleLogFilterCriteria
-): any[] {
-  return logs.filter((log) => {
+export function advancedFilter<ItemType>(
+  arr: ItemType[],
+  criteria: FilterCriteria<ItemType>
+): ItemType[] {
+  return arr.filter((log) => {
     return (
-      Object.entries(criteria) as [keyof LogEntry, SimpleLogFilterCriteria][]
+      Object.entries(criteria) as [
+        keyof ItemType,
+        FilterCriteria<ItemType>[keyof ItemType]
+      ][]
     ).every(([key, condition]) => {
       if (condition === NO_FILTER) {
         return true;
       }
       const value = log[key];
       if (typeof condition === "function") {
-        return (condition as (value: any) => boolean)(value);
+        return condition(value);
       }
       return value === condition;
     });

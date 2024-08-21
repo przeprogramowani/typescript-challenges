@@ -9,14 +9,14 @@ import {
   LogSourceMap,
 } from "./constants";
 import {
+  advancedFilter,
   advancedSort,
   NO_FILTER,
-  simpleLogFilter,
 } from "./services/logProcessing";
 import {
+  FilterCriteria,
   LogEntry,
   LogLevel,
-  SimpleLogFilterCriteria,
   SortCriteria,
   UpdateLogFilterFunction,
 } from "./types";
@@ -29,9 +29,9 @@ function LogDashboard({logs}: LogDashboardProps) {
   const [sortCriteria, setSortCriteria] = useState<SortCriteria<LogEntry>>({
     timestamp: {direction: "desc"},
   });
-  const [filterCriteria, setFilterCriteria] = useState<SimpleLogFilterCriteria>(
-    {}
-  );
+  const [filterCriteria, setFilterCriteria] = useState<
+    FilterCriteria<LogEntry>
+  >({});
 
   const compareLogLevels = (a: LogLevel, b: LogLevel) =>
     LogLevelOrder[a] - LogLevelOrder[b];
@@ -58,7 +58,7 @@ function LogDashboard({logs}: LogDashboardProps) {
   };
 
   const filteredAndSortedLogs = useMemo(() => {
-    const filteredLogs = simpleLogFilter(logs, filterCriteria);
+    const filteredLogs = advancedFilter(logs, filterCriteria);
     return advancedSort(filteredLogs, sortCriteria);
   }, [logs, filterCriteria, sortCriteria]);
 

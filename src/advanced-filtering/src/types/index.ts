@@ -26,16 +26,15 @@ export type SortCriteria<ItemType> = {
   };
 };
 
-export type SimpleLogFilterCriteria = {
-  level?: LogLevel | ((value: LogLevel) => boolean);
-  source?: LogSource | ((value: LogSource) => boolean);
+export type FilterCriteria<ItemType> = {
+  [Key in keyof ItemType]?: ItemType[Key] | ((value: ItemType[Key]) => boolean);
 };
 
-export type SimpleLogFilterKey = "level" | "source";
+export type LogFilterKey = Extract<keyof LogEntry, "level" | "source">;
 
-export type SimpleFilterableLogValue = LogLevel | LogSource;
+export type FilterableLogValue = LogEntry[LogFilterKey];
 
 export type UpdateLogFilterFunction = (
-  key: SimpleLogFilterKey,
-  value: SimpleFilterableLogValue | ""
+  key: LogFilterKey,
+  value: FilterableLogValue | ""
 ) => void;

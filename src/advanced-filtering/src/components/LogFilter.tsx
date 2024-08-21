@@ -1,6 +1,6 @@
 import {
-  SimpleFilterableLogValue,
-  SimpleLogFilterKey,
+  FilterableLogValue,
+  LogFilterKey,
   UpdateLogFilterFunction,
 } from "../types";
 
@@ -18,8 +18,8 @@ const SelectArrow = () => (
 
 interface LogFilterProps {
   updateFilter: UpdateLogFilterFunction;
-  filterKey: SimpleLogFilterKey;
-  options: readonly SimpleFilterableLogValue[];
+  filterKey: LogFilterKey;
+  options: readonly FilterableLogValue[];
   allLabel: string;
 }
 
@@ -32,7 +32,7 @@ export const LogFilter = ({
   <div className='relative inline-block w-full'>
     <select
       onChange={(e) =>
-        updateFilter(filterKey, e.target.value as SimpleFilterableLogValue | "")
+        updateFilter(filterKey, e.target.value as FilterableLogValue | "")
       }
       className='w-full px-4 py-2 pr-10 text-gray-700 bg-white border rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500'
     >
