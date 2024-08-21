@@ -1,6 +1,9 @@
 # Opanuj TypeScript z Przeprogramowanymi
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![](./media/logo-main.jpg)
@@ -31,6 +34,10 @@ Discover all the challenges by running `npm run` in your console. Here's the lis
 - `npm run test:new-skills`
 - `npm run test:constraints`
 - `npm run test:type-operator`
+
+## 💪 Advanced challenge
+
+If you're looking for a "final boss", we've something that will let you practice advanced TypeScript inside a React app. More details are available in the `src/advanced-filtering/README.md`. Enjoy!
 
 ## 🙌 Contributors welcomed!
 
