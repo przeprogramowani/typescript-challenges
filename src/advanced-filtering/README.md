@@ -37,6 +37,6 @@ npm run build
 
 ## 🌟 Example solution
 
-As this is an advanced challenge, there is no single correct solution. However, you can find an example solution in the `advanced-filtering-solution` branch.
+As this is an advanced challenge, there is no single correct solution. However, you can find an example solution in the `advanced-filtering-solution` branch and [Pull Request: Example solution for Advanced Filtering Challenge #30](https://github.com/przeprogramowani/typescript-challenges/pull/30).
 
 Before checking the solution, try to solve the challenge on your own! Use sorting-related code as a reference and try to apply similar typing techniques to filtering-related code.
