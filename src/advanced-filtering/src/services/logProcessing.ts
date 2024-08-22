@@ -1,12 +1,12 @@
-import {FilterCriteria, SortCriteria} from "../types";
+import { FilterCriteria, SortCriteria } from '../types';
 
-export function advancedSort<ItemType>(
+export function advancedSort<ItemType extends object>(
   arr: ItemType[],
   criteria: SortCriteria<ItemType>
 ): ItemType[] {
   return [...arr].sort((a, b) => {
     for (const key in criteria) {
-      const {direction, customCompare} = criteria[key] || {};
+      const { direction, customCompare } = criteria[key] || {};
       if (a[key] !== b[key]) {
         let comparison: number;
         if (customCompare) {
@@ -14,7 +14,7 @@ export function advancedSort<ItemType>(
         } else {
           comparison = a[key] < b[key] ? -1 : 1;
         }
-        return direction === "desc" ? -comparison : comparison;
+        return direction === 'desc' ? -comparison : comparison;
       }
     }
     return 0;
@@ -23,7 +23,7 @@ export function advancedSort<ItemType>(
 
 export const NO_FILTER = null;
 
-export function advancedFilter<ItemType>(
+export function advancedFilter<ItemType extends object>(
   arr: ItemType[],
   criteria: FilterCriteria<ItemType>
 ): ItemType[] {
@@ -38,7 +38,7 @@ export function advancedFilter<ItemType>(
         return true;
       }
       const value = log[key];
-      if (typeof condition === "function") {
+      if (typeof condition === 'function') {
         return condition(value);
       }
       return value === condition;
