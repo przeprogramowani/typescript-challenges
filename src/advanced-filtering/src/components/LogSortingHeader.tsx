@@ -1,4 +1,4 @@
-import {LogEntry, SortCriteria} from "../types";
+import { LogEntry, SortCriteria } from '../types';
 
 interface LogSortingHeaderProps {
   field: keyof LogEntry;
@@ -13,10 +13,10 @@ export function LogSortingHeader({
   label,
   sortCriteria,
   toggleSort,
-  className = "",
+  className = '',
 }: LogSortingHeaderProps) {
   const direction = sortCriteria[field]?.direction;
-  const arrow = direction === "asc" ? "↑" : direction === "desc" ? "↓" : "";
+  const arrow = direction === 'asc' ? '↑' : direction === 'desc' ? '↓' : '';
 
   return (
     <th

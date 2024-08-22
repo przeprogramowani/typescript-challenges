@@ -2,7 +2,7 @@ import { FilterCriteria, SortCriteria } from '../types';
 
 export function advancedSort<ItemType extends object>(
   arr: ItemType[],
-  criteria: SortCriteria<ItemType>
+  criteria: SortCriteria<ItemType>,
 ): ItemType[] {
   return [...arr].sort((a, b) => {
     for (const key in criteria) {
@@ -25,13 +25,13 @@ export const NO_FILTER = null;
 
 export function advancedFilter<ItemType extends object>(
   arr: ItemType[],
-  criteria: FilterCriteria<ItemType>
+  criteria: FilterCriteria<ItemType>,
 ): ItemType[] {
   return arr.filter((log) => {
     return (
       Object.entries(criteria) as [
         keyof ItemType,
-        FilterCriteria<ItemType>[keyof ItemType]
+        FilterCriteria<ItemType>[keyof ItemType],
       ][]
     ).every(([key, condition]) => {
       if (condition === NO_FILTER) {

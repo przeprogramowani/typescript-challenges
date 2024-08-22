@@ -16,7 +16,7 @@ export interface LogEntry {
 
 export type CompareFunction<ItemTypeValue> = (
   a: ItemTypeValue,
-  b: ItemTypeValue
+  b: ItemTypeValue,
 ) => number;
 
 export type SortCriteria<ItemType extends object> = {
@@ -36,5 +36,5 @@ export type FilterableLogValue = LogEntry[LogFilterKey];
 
 export type UpdateLogFilterFunction = (
   key: LogFilterKey,
-  value: FilterableLogValue | ''
+  value: FilterableLogValue | '',
 ) => void;
