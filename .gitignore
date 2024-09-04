@@ -107,3 +107,6 @@ dist
 
 #intellij
 .idea/
+
+# Config files should not be ignored
+!*.config.js
