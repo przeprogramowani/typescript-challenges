@@ -1,9 +1,7 @@
 # Opanuj TypeScript z Przeprogramowanymi
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![](./media/logo-main.jpg)
@@ -64,6 +62,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/PatrykPytlarczyk"><img src="https://avatars.githubusercontent.com/u/138799887?v=4?s=100" width="100px;" alt="PatrykPytlarczyk"/><br /><sub><b>PatrykPytlarczyk</b></sub></a><br /><a href="https://github.com/przeprogramowani/typescript-challenges/commits?author=PatrykPytlarczyk" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/raqso"><img src="https://avatars.githubusercontent.com/u/13930984?v=4?s=100" width="100px;" alt="raqso"/><br /><sub><b>raqso</b></sub></a><br /><a href="https://github.com/przeprogramowani/typescript-challenges/commits?author=raqso" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
